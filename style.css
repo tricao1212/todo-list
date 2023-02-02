@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    color: white;
+    padding: 0 50vh 10vh 0vh;
+}
+
+input {
+    border-radius: 20px;
+    height: 5vh;
+    width: 34%;
+    font-size: 2vh;
+    text-align: center;
+}
+
+#add-btn {
+    height: 5vh;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 800;
+}
+
+main h1 {
+    padding: 10vh 45vh 2vh 0;
+    color: white;
+    font-size: 50px;
+}
+
+.task {
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+    width: 40%;
+    border-radius: 10px;
+}
+
+#tasks div:nth-child(even) {
+    background-color: gainsboro;
+}
+
+#tasks .task #task-edit {
+    transition: 0.4s;
+    color: black;
+    font-weight: 700;
+    width: 75%;
+    text-align: left;
+    outline: none;
+    appearance: none;
+    border: none;
+    background: none;
+}
+
+#task-after {
+    transition: 0.4s;
+    font-weight: 700;
+    opacity: 0.5;
+    width: 75%;
+    text-align: left;
+    outline: none;
+    appearance: none;
+    border: none;
+    background: none;
+    text-decoration: line-through;
+}
+
+.task-btn {
+    font-weight: bold;
+    background: none;
+    border: none;
+    height: 5vh;
+    width: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+#delete-btn {
+    color: red;
+}
+
+#done-btn {
+    color: green;
+}
+
+#task-edit::placeholder {
+    color: black;
+}
